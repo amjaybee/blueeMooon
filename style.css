@@ -1,0 +1,586 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu {
+  float: right;
+  padding-right: 10px;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: blue;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* for the small screen nav */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (height: 375px) {
+  .overlay {
+    overflow-y: auto;
+    width: 50%;
+    height: 0;
+  }
+
+  .overlay-content {
+    margin-top: 0px;
+    top: 15%;
+  }
+
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+ @media only screen and (min-width: 600px) {
+  span {
+    display: none;
+  }
+  .overlay {
+    display: none;
+    
+  }
+  .overlay-content {
+    display: none;
+  }
+} 
+
+@media only screen and (max-width: 600px) {
+  .overlay {
+    overflow-y: auto;
+    width: 55%;
+    height: 0;
+  }
+
+  .overlay-content {
+    margin-top: 0px;
+    top: 10%;
+  }
+
+  .overlay a {
+    font-size: 20px
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+/* for the widescreen nav */
+.topnav {
+  overflow: auto;
+  background-color: #333;
+}
+
+#active {
+  float: left;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(54, 45, 175);
+  color: white;
+  transition: 3s;
+}
+
+.topnav a.active {
+  background-color: #1f0bd3;
+  color: white;
+}
+
+
+/* for the first sec welcome to bluemoon */
+.sec1 {
+  background-color: black;
+  height: 600px;
+  width: 100%;
+  color: blue;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#text a {
+  font-size: 55px;
+  font-weight: 800;
+  text-align: center;
+  display: block;
+
+
+}
+
+#text p {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+
+.images img {
+
+  padding-top: 10px;
+  width: 25%;
+  float: left;
+  max-height: 250px;
+  min-height: 250px;
+  object-fit: cover;
+}
+
+/* for the about us  */
+
+.col-2 img {
+  width: 380px;
+
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 750px;
+  margin: auto auto;
+  column-gap: 0;
+}
+
+.col-1 a {
+  font-size: 18px;
+  display: block;
+  margin-top: 80px;
+  padding: 0 30px 0 30px;
+}
+
+.col-1 {
+  background-color: rgba(207, 245, 245, 0.671);
+}
+
+.cc2 {
+  background-color: blue;
+}
+
+.cc2 a {
+  color: white;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  #jay {
+    display: none;
+  }
+
+  .col-2 img {
+    display: none;
+  }
+
+  #text a {
+    font-size: 30px;
+  }
+
+  #text p {
+    font-size: 20px;
+  }
+
+  .col-1 {
+    padding-bottom: 10px;
+    max-height: 100%;
+    max-width: 50%;
+  }
+
+  .col-1 h3 {
+    font-size: 30px;
+  }
+
+  .col-1 a {
+    font-size: 15px;
+    padding-bottom: 50px;
+    padding-top: 0;
+  }
+
+}
+
+
+.contact {
+  width: 100%;
+  height: 100vh;
+}
+
+/* for the slideshow */
+/* * {
+  box-sizing: border-box
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0
+} */
+
+.mySlides {
+  display: none
+}
+
+img {
+  padding-top: 10px;
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+/* .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+} */
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px) {
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+/* scroll to top */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right:30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(27, 15, 202);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: red;
+}
+
+
+@media only screen and (max-width: 375px) {
+  #myBtn {
+    position: fixed;
+    right: 52%;
+    z-index: 99;
+    display: none;
+    outline: none;
+    border-radius: 10px;
+  }
+}
+
+/* for footer */
+
+.sv1 img{
+  width: 50%;
+  min-width: 150px;
+  max-width: 150px;
+  /* border: 10px solid green; */
+  border-radius: 20%;
+}
+
+.service{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 80%;
+  margin: auto auto;
+  column-gap: 30px;
+  margin-top: 80px;
+  background-color: rgb(17, 0, 255);
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 40px 0 40px 0;
+}
+
+.sv1 h3{
+  text-align: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  color: white;
+}
+
+footer{
+  margin-top: 80px;
+  background-color: rgb(202, 202, 202);
+  padding: 30px ;
+  box-sizing: border-box;
+}
+
+.ftsec{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 100%;
+  margin: auto auto;
+ 
+}
+
+.ft1 li {
+  list-style: none;
+  text-align: left;
+  
+
+}
+
+.ft1 li a{
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 2.2;
+  color: rgb(0, 0, 0);
+}
+.ft1 li:hover{
+      color: red;
+}
+
+.ft1 li a:hover{
+  color: red;
+}
+
+
+
+@media only screen and (max-width: 600px){
+  #im1{
+    display: none;
+  }
+  #im2{
+    display: none;
+  }
+}

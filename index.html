@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,height=device-height initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BLUEEMOON</title>
+</head>
+
+
+<body onload="typeWriter()">
+
+    <!-- for the drop down menu  -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+       
+        <a href="#home" onclick="closeNav()">Home</a>
+        <a href="#order now" onclick="closeNav()">Order Now</a>
+        <a href="#gallery" onclick="closeNav()">Gallery</a>
+        <a href="#about" onclick="closeNav()">About us</a>
+        <a href="#contact" onclick="closeNav()">Contact</a>
+
+      </div>
+    </div>
+   
+
+    <div class="topnav">
+    <span class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+        <a href="#contact" id="jay">Contact</a>
+        <a href="#about" id="jay">About us</a>
+        <a href="#gallery" id="jay">Gallery</a>
+        <a href="#order now" id="jay">Order Now</a>
+        <a href="#home" id="jay">Home</a>
+
+
+        <a class="active" id="active" href="#home">BLUEE MOON</a>
+
+    </div>
+
+
+<section class="sec1">
+    <div id="text">
+
+        <a id="demo"></a>
+        <!-- <a> Welcome To BlueeMooon Restaurant </a> -->
+     
+    </div>
+</section>
+
+<!-- there are two different sections here -->
+<section class="two-col" id="about">
+    <div class="col-1">
+
+        <a>
+            <h3>About us</h3>
+            BlueeMooon is the best resataurant you can find anywhere base on how we operate we offer wide range of services as far as reaching your door step when you make order with us, so what are you waiting for? order now
+        </a>
+    </div>
+
+    <div class="col-2">
+        <img src="./images/fd2.jpg" alt="text teacher">
+    </div>
+
+</section>
+
+<section class="two-col">
+    <div class="col-2">
+        <img src="./images/f2.png" alt="text teacher">
+    </div>
+
+    <div class="col-1 cc2">
+
+        <a>
+            <h3>why choose us?</h3>
+            Your happy place is our happy place! Welcome to the best restaurant in town serving everything from burgers
+            and fries to pasta and pizza, and the hottest deserts.
+            Nothing’s better than this. Craving now? Order before we close down today!
+    </div>
+</section>
+
+
+<div class="slideshow-container" id="gallery">
+
+    <div class="mySlides fade">
+        <!-- <div class="numbertext">1 / 4</div> -->
+        <img src="./images/2367510497115600038.jpg.png" style="width:100%">
+        <div class="text"> FRIED RICE</div>
+    </div>
+
+    <div class="mySlides fade">
+        <!-- <div class="numbertext">2 / 4</div> -->
+        <img src="./images/2367510784886702211.jpg.png" style="width:100%">
+        <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+        <!-- <div class="numbertext">3 / 4</div> -->
+        <img src="./images/2367511034489983873.jpg.png" style="width:100%">
+        <div class="text">DELICIOUS ABACHA</div>
+    </div>
+
+    <div class="mySlides fade">
+        <!-- <div class="numbertext">4 / 4</div> -->
+        <img src="./images/2378023658419860673.jpg.png" style="width:100%">
+        <div class="text">WHITE RICE AND PEPPER STEW</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+
+</div>
+
+<div class="container">
+    <form action="action_page.php">
+        <h1 id="order now">Order Now</h1>
+
+        <label for="fname">Email Address</label>
+        <input type="email" id="fname" name="firstname" placeholder="Your name.." required>
+
+        <label for="lname">Home Address</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+        <label for="Food">Food in stock</label>
+        <select id="food" name="food" required>
+            <option value="australia"></option>
+            <option value="ts">Tuwon shinkafa</option>
+            <option value="jr">Jollof Rice</option>
+            <option value="pepmeat">Pepper Meat</option>
+            <option value="frac">Fried Rice and Chicken</option>
+            <option value="amala">Amala</option>
+        </select>
+
+        <label for="subject">Subject: State time you want for delivery</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</div>
+
+
+<div class="footer" id="contact">
+    <section class="service">
+
+        <div class="sv1">
+           <center> <img src="./images/2385769005887894836.jpg.png" alt=""></center>
+          <h3>  we offer lots of delicous meals</h3>
+        </div>
+        <div class="sv1" id="im1">
+           <center><img src="./images/2385767482675957369.jpg.png" alt=""></center>
+            <h3>  we offer home delivery services</h3>
+        </div>
+        <div class="sv1" id="im2">
+            <center><img src="./images/2385767033214457279.jpg.png" alt=""></center>
+          <h3>  we also cover events and occasions</h3>
+        </div>
+    </section>
+
+
+<footer>
+<section class="ftsec">
+    <div class="ft1">
+        <li><h3 href="#">Home</h3></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#serive">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+    </div>
+    <div class="ft1">
+        <li><h3 href="#">Company</h3></li>
+        <li><a href="#">careers</a></li>
+        <li><a href="#">partners</a></li>
+        <li><a href="#">Clients</a></li>
+    </div>
+    <div class="ft1">
+        <li><h3 href="#">Social links</h3></li>
+        <li><a href="#">facebook</a></li>
+        <li><a href="#">twitter</a></li>
+        <li><a href="#">instagram</a></li>
+       
+    </div>
+    <div class="ft1" id="im1">
+        <li><h3 href="#">why us</h3></li>
+        <li><a href="#">press release</a></li>
+        <li><a href="#">media</a></li>
+        <li><a href="#">Blog</a></li>
+    </div>
+
+</section>
+ 
+</footer>
+</div>
+
+<!-- scroll to top button -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
